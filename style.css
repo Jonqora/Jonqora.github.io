@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-size-adjust: 110%;
+  font-size-adjust: 110%;
 }
 body {
   font-family: "Tahoma", "Arial", sans-serif;
