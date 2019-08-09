@@ -1,0 +1,165 @@
+html {
+  box-sizing: border-box; /*Sweet sanity*/
+}
+
+/*General stuff*/
+body {
+  background-color: #23272A;
+  width: 100%;
+  margin: 0 auto;
+  color: #FFF;
+  font-family: "Tahoma", "Arial", sans-serif;
+  line-height: 1.25; /*Prettier line spacing*/
+}
+header, section, footer {
+  clear: both;
+  width: 80%;
+  margin-left: 10%;  margin-right: 10%;
+}
+h1 {
+  font-size: 3em;
+}
+p, h3 {
+  font-size: 1.25em; /*Makes h3 match text size*/
+}
+
+/*Text emphasis for listening and non-listening type labels*/
+.nonlisteningtype {
+  font-weight: bold;
+  color: rgb(119,43,35);
+}
+.listeningtype {
+  font-weight: bold;
+  color: rgb(17,48,103);
+}
+
+/*Two types of formatting for disgram images*/
+.wideimage {
+  width: 100%;
+}
+.smallimage {
+  width: 50%;
+  min-width: 300px;
+}
+
+/*Formates header bar cells for the non-listening types*/
+.nl-type {
+  text-align: center; /*Center-aligns the number box*/
+}
+.number {
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  background-color: grey;
+  font-size: 1.25em;
+  position: relative;
+  top: 0.5em;
+  border-radius: 10px;
+}
+.cells{
+  display: flex;
+  vertical-align: top;
+  text-align: center;
+}
+.diagramcell {
+  padding: 0.25em 1.5em 0.25em 1.5em;
+  width: 50%;
+}
+.cells .nonlistening {
+  background-color: rgb(148,54,44);
+  border-top-left-radius: 10px;
+}
+.cells .listening {
+  background-color: rgb(21,59,127);
+  border-top-right-radius: 10px;
+}
+
+/*Makes the side-by-side h2 and p elements match*/
+.cells h2, .cells p {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+/*Changes things for the intro section*/
+.introduction .listening {
+  border-top-left-radius: 10px;
+  width: 100%;
+}
+.introduction .nonlistening {
+  display: none;
+}
+
+/*Changes things for the disruption (non)listening type*/
+#disruption .number {
+  visibility: hidden;
+}
+#disruption .listening {
+  display: none;
+}
+#disruption .nonlistening {
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+/*Areas  with text and images found under each header bar*/
+.textwindow {
+  padding: 0.5em 5% 0.5em 5%;
+  background-color: #FFF;
+  color: #222;
+  text-align: left;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+.textwindow .description {
+  text-align: center; /*This keeps all images centered*/
+}
+.textwindow .description p, .textwindow .description h3 {
+  text-align: left; /*And this UN-centers the text*/
+}
+
+/*Formats the quotes found in each section*/
+.quote {
+  clear: both;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  padding: 0 10% 0 10%;
+}
+.quote .quoteattr {
+  color: rgb(21,59,127);
+  font-style: italic;
+}
+.quote .quotetext {
+  color: #666;
+}
+
+/*Footer elements*/
+footer .smalltext {
+  clear: both;
+  font-size: xx-small;
+}
+footer p {
+  font-size: small;
+}
+
+footer .headshot {
+  margin: 0 1em 0 0;
+  height: 4em;
+  float: left;
+}
+
+/*Makes font grow on hovered (non)listening type header bars*/
+.nl-type .headerbar:hover .cells p, .nl-type .headerbar:hover .cells h2 {
+  font-size: 1.75em;
+}
+.nl-type .headerbar:hover, .nl-type .headerbar:hover {
+  cursor: pointer;
+}
+
+/*Edit this to hide/show the non-listening sections*/
+.nl-type .textwindow {
+  /*display: none; /*Change this via JS later*/
+}

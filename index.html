@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+  <head>
+    <title>Ellen Lloyd | Home</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="images/favicon.png" rel="icon" />
+    <meta charset="utf-8">
+    <meta property="og:title" content="Ellen Lloyd" />
+    <meta property="og:description" content="Almost-graduated grad student." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ellenlloyd.ca" />
+    <meta property="og:image" content="https://ellenlloyd.ca/images/headshot.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="profile-image">
+        <img class="headshot" src="images/headshot.png">
+      </div>
+      <div class="profile-title">
+        <h1>Ellen Lloyd</h1>
+        <h2>Master's Student<h2>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="about-me">
+        <h3>About Me</h3>
+        <div class="about-text">
+          <p>Confident speaker, skilled writer, and passionate teacher: I excel at presenting information and public speaking. I perform exceptionally well as a liason, facilitating communication and mutual understanding between people with highly technical and non-technical backgrounds.</p>
+          <p>I have a BSc in psychology and am nearing completion of my Master's. My thesis is about understanding <strong>non</strong>-listening interactions in high-conflict settings. You'll find a diagrammed summary at the project link on this page.</p>
+          <p>My recent interests have turned towards programming and computer science. I have a head for algorithms, an appreciation for well-written code, a passion for user-friendly design, and a fierce determination to solve challenging problems.</p>
+          <p><strong>Experience:</strong> Python, JavaScript, CSS</p>
+        </div>
+      </section>
+
+      <div class="project-sections">
+
+        <section class="projects major-projects">
+          <h3>Larger Projects</h3>
+            <article class="project" id="project1">
+              <a href="nonlistening/index.html" class="project-link">
+                <h1>Master's Thesis Work</h1>
+                <img class="project-img" src="images/non-listening-model.png">
+                <p>I developed a new theory for understanding non-listening interactions. Click here to read a detailed summary of the main ideas!</p>
+              </a>
+            </article>
+        </section>
+
+        <section class="projects mini-projects">
+          <h3>Mini Projects</h3>
+            <article class="project" id="mini1">
+              <a href="https://jonqora.github.io/mondrian/" class="project-link">
+                <h1>Mondrian Stretch</h1>
+                <img class="project-img" src="images/mondrian.png">
+                <p>Responsive CSS snippet inspired by the art of Piet Mondrian.</p>
+              </a>
+            </article>
+            <article class="project" id="mini2">
+              <a href="https://jonqora.github.io/div-art/" class="project-link">
+                <h1>&lt;div&gt; art</h1>
+                <img class="project-img" src="images/divart.png">
+                <p>Abstract art generator using JavaScript DOM manipulation.</p>
+              </a>
+            </article>
+        </section>
+
+      </div>
+
+    </div>
+
+    <footer>
+      <p><a class="footerlink" href="https://github.com/Jonqora">GitHub</a></p>
+      <p><a class="footerlink" href="https://ca.linkedin.com/in/lloydellen">LinkedIn</a></p>
+      <p><a class="email">ellen [dot] ruth [dot] lloyd [at] gmail [dot] com</a></p>
+    </footer>
+
+    <script>
+      let emailElement = document.getElementsByClassName('email')[0];
+      let hiddenEmail = emailElement.innerHTML;
+      let actualEmail = hiddenEmail.replace(/\W*\[dot\]\W*/g, '.').replace(/\W*\[at\]\W*/g, '@');
+      emailElement.innerHTML = actualEmail;
+      emailElement.setAttribute('href', 'mailto:' + actualEmail);
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,103 @@
+/*General stuff*/
+html {
+  background-color: ;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Tahoma", "Arial", sans-serif;
+  color: #111; /*Not quite black*/
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header, footer {
+  background-color: #237;
+  color: #EEE;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*Header section*/
+header h1 {
+  font-family: "Verdana", "Arial", sans-serif;
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.75em;
+}
+.profile-image {
+  width: 30%;
+  max-width: 250px;
+  margin: 1.5em 1.5em 1.5em 0em;
+}
+.profile-title {
+}
+.headshot {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/*About Me and Project Sections*/
+.about-me, .projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.about-me .about-text {
+  width: 90%;
+}
+.major-projects .project {
+  width: 90%;
+}
+.mini-projects .project {
+  width: 40%;
+}
+.project-img {
+  width: 100%;
+}
+
+h3 { /*Heading bars*/
+  width: 100%; /*Takes up full width in projects*/
+  text-align: center;
+  background-color: #29B;
+  color: #EEE;
+  padding: 1em;
+  border-radius: 0.4em;
+}
+
+footer p {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+footer .footerlink:link {
+  text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  /* For desktop: */
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.about-me {
+  width: 35%;
+  align-content: flex-start;
+}
+.about-me h3 {
+  background-color: #237;
+}
+.project-sections {
+  width: 60%;
+}
