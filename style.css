@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-size-adjust: 110%;
 }
 body {
   font-family: "Tahoma", "Arial", sans-serif;
@@ -87,20 +88,23 @@ footer .footerlink:link {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   /* For desktop: */
-
-.content {
-  display: flex;
-  justify-content: space-between;
-}
-.about-me {
-  width: 35%;
-  align-content: flex-start;
-}
-.about-me h3 {
-  background-color: #237;
-}
-.project-sections {
-  width: 60%;
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-me {
+    width: 35%;
+    align-content: flex-start;
+  }
+  .about-me h3 {
+    background-color: #237;
+  }
+  .project-sections h3 {
+    background-color: #29B;
+  }
+  .project-sections {
+    width: 60%;
+  }
 }
