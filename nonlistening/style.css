@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box; /*Sweet sanity*/
+  box-sizing: border-box; /*Sweet sanity*/;
+  text-size-adjust: none;
 }
 
 /*General stuff*/
