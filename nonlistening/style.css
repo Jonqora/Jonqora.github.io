@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box; /*Sweet sanity*/;
-  text-size-adjust: none;
 }
 
 /*General stuff*/
@@ -63,6 +62,7 @@ p, h3 {
 .diagramcell {
   padding: 0.25em 1.5em 0.25em 1.5em;
   width: 50%;
+  font-size-adjust: none; /*Fix for odd font sizes*/
 }
 .cells .nonlistening {
   background-color: rgb(148,54,44);
