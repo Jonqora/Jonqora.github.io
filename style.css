@@ -1,6 +1,6 @@
 /*General stuff*/
 html {
-  background-color: ;
+  background-color: #237;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,6 +16,9 @@ a:link, a:visited {
 .content {
   width: 90%;
   margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
 }
 
 header, footer {
