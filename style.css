@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size-adjust: 110%;
+  text-size-adjust: none;
 }
 body {
   font-family: "Tahoma", "Arial", sans-serif;
@@ -20,6 +20,9 @@ a:link, a:visited {
   padding-left: 5%;
   padding-right: 5%;
   background-color: white;
+}
+p {
+  font-size: 1.17em;
 }
 
 header, footer {
@@ -57,6 +60,9 @@ h2 {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+article h1 {
+  font-size: 1.5em;
+}
 .about-me .about-text {
   width: 90%;
 }
@@ -77,6 +83,7 @@ h3 { /*Heading bars*/
   color: #EEE;
   padding: 1em;
   border-radius: 0.4em;
+  font-size: 1.5em;
 }
 
 footer p {
