@@ -27,7 +27,7 @@ p {
 
 header, footer {
   background-color: #237;
-  color: #EEE;
+  color: #FFF;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -80,7 +80,7 @@ h3 { /*Heading bars*/
   width: 100%; /*Takes up full width in projects*/
   text-align: center;
   background-color: #29B;
-  color: #EEE;
+  color: #FFF;
   padding: 1em;
   border-radius: 0.4em;
   font-size: 1.5em;
