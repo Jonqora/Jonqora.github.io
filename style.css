@@ -33,18 +33,16 @@ header, footer {
 /*Header section*/
 header h1 {
   font-family: "Verdana", "Arial", sans-serif;
-  font-size: 2.5em;
 }
 h2 {
-  font-size: 1.75em;
 }
 .profile-image {
   width: 30%;
   max-width: 250px;
-  margin: 1.5em 1.5em 1.5em 1.5em;
+  margin: 1.5em 0.75em 1.5em 0.75em;
 }
 .profile-title {
-  margin-top: -2em;
+  margin: -2em 0.75em 0.25em 0.75em;
 }
 .headshot {
   width: 100%;
@@ -59,6 +57,7 @@ h2 {
 }
 article h1 {
   font-size: 1.5em;
+  margin-top: 0.5em;
 }
 .about-me .about-text {
   width: 90%;
@@ -81,6 +80,7 @@ h3 { /*Heading bars*/
   padding: 0.75em;
   border-radius: 0.4em;
   font-size: 1.5em;
+  margin: 1em 0 0.5em 0;
 }
 
 footer p {
