@@ -1,0 +1,17 @@
+#Ignore all other files
+*
+
+#Ignore dropbox files
+*.dropbox
+
+#Whitelist main webpage files
+!index.html
+!style.css
+!site.webmanifest
+
+#Whitelist /images files and /nonlistening redirect
+!images/
+!images/*
+!nonlistening/
+!nonlistening/*
+!.gitignore
