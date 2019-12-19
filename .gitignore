@@ -15,3 +15,6 @@
 !nonlistening/
 !nonlistening/*
 !.gitignore
+
+#Whitelist daily200words graphics
+!.daily200words
