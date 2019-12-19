@@ -19,3 +19,4 @@
 #Whitelist daily200words graphics
 !daily200words/
 !daily200words/*
+!daily200words/*/*
