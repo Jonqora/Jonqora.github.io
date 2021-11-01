@@ -35,6 +35,7 @@ header h1 {
   font-family: "Verdana", "Arial", sans-serif;
 }
 h2 {
+  font-weight: normal;
 }
 .profile-image {
   width: 30%;
@@ -46,7 +47,7 @@ h2 {
 }
 .headshot {
   width: 100%;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
 }
 
 /*About Me and Project Sections*/
@@ -78,7 +79,7 @@ h3 { /*Heading bars*/
   background-color: #29B;
   color: #FFF;
   padding: 0.75em;
-  border-radius: 0.4em;
+  border-radius: 0.15em;
   font-size: 1.5em;
   margin: 1em 0 0.5em 0;
 }
