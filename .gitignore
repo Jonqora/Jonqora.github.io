@@ -9,9 +9,11 @@
 !style.css
 !site.webmanifest
 
-#Whitelist /images files and /nonlistening redirect
+#Whitelist /images /files and /nonlistening redirect
 !images/
 !images/*
+!files/
+!files/*
 !nonlistening/
 !nonlistening/*
 !.gitignore

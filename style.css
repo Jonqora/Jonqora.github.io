@@ -6,28 +6,38 @@ html {
   padding: 0;
 }
 body {
-  font-family: "Tahoma", "Arial", sans-serif;
   color: #111; /*Not quite black*/
-}
-a:link, a:visited {
-  text-decoration: none;
-  color: inherit;
+  font-family: "Tahoma", "Arial", sans-serif;
 }
 .content {
-  width: 90%;
+  background-color: white;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: white;
+  /*width: 90%;*/
+}
+/*Normal links plain except text-link class*/
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.text-link:link {
+  color: #29B;
+  text-decoration: underline;
+}
+.text-link:visited {
+  color: #237;
+  text-decoration: underline;
 }
 
 header, footer {
+  align-items: flex-end;
   background-color: #237;
   color: #FFF;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-end;
 }
 
 /*Header section*/
@@ -38,16 +48,44 @@ h2 {
   font-weight: normal;
 }
 .profile-image {
-  width: 30%;
-  max-width: 250px;
   margin: 1.5em 0.75em 1.5em 0.75em;
+  max-width: 250px;
+  width: 30%;
 }
-.profile-title {
+.profile-content {
   margin: -2em 0.75em 0.25em 0.75em;
 }
 .headshot {
-  width: 100%;
   border-radius: 0.3em;
+  width: 100%;
+}
+.profile-resume {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0.6em;
+  justify-content: flex-start;
+}
+.preview-resume-button,
+.download-resume-button {
+  align-items: center;
+  background-color: #29B;
+  border-radius: 0.15em;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  text-align: center;
+  width: 45%;
+}
+.button-main {
+  font-size: 1.2em;
+}
+.button-aside {
+  font-size: 0.7em;
+}
+.download-resume-button .button-main {
+  font-weight: bold;
 }
 
 /*About Me and Project Sections*/
@@ -58,7 +96,8 @@ h2 {
 }
 article h1 {
   font-size: 1.5em;
-  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  margin-top: 1.0em;
 }
 .about-me .about-text {
   width: 90%;
@@ -74,19 +113,19 @@ article h1 {
 }
 
 h3 { /*Heading bars*/
-  width: 100%; /*Takes up full width in projects*/
-  text-align: center;
   background-color: #29B;
-  color: #FFF;
-  padding: 0.75em;
   border-radius: 0.15em;
+  color: #FFF;
   font-size: 1.5em;
   margin: 1em 0 0.5em 0;
+  padding: 0.75em;
+  text-align: center;
+  width: 100%; /*Takes up full width in projects*/
 }
 
 footer p {
-  margin-right: 0.5em;
   margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 footer .footerlink:link {
   text-decoration: underline;
@@ -100,8 +139,8 @@ footer .footerlink:link {
     justify-content: space-between;
   }
   .about-me {
-    width: 35%;
     align-content: flex-start;
+    width: 35%;
   }
   .about-me h3 {
     background-color: #237;
