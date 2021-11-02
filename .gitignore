@@ -8,6 +8,8 @@
 !index.html
 !style.css
 !site.webmanifest
+!scripts/
+!scripts/*
 
 #Whitelist /images /files and /nonlistening redirect
 !images/
