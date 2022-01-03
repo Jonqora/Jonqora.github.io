@@ -1,6 +1,8 @@
 #Ignore all other files
 *
 
+#Ignore git config (IMPORTANT)
+.git/*
 #Ignore dropbox files
 *.dropbox
 
