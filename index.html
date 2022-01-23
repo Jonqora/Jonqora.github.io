@@ -169,16 +169,17 @@
     </div> <!--End content-->
 
     <footer>
+      <p><a class="footerlink email">ellen [dot] ruth [dot] lloyd [at] gmail [dot] com</a></p>
       <p><a class="footerlink" href="https://github.com/Jonqora">GitHub</a></p>
       <p><a class="footerlink" href="https://ca.linkedin.com/in/lloydellen">LinkedIn</a></p>
-      <p><a class="email">ellen [dot] ruth [dot] lloyd [at] gmail [dot] com</a></p>
+      <p>site design © 2022 Ellen Lloyd</p>
     </footer>
 
     <script>
       let emailElement = document.getElementsByClassName('email')[0];
       let hiddenEmail = emailElement.innerHTML;
       let actualEmail = hiddenEmail.replace(/\W*\[dot\]\W*/g, '.').replace(/\W*\[at\]\W*/g, '@');
-      emailElement.innerHTML = actualEmail;
+      emailElement.innerHTML = 'Email';
       emailElement.setAttribute('href', 'mailto:' + actualEmail);
     </script>
 
