@@ -5,6 +5,8 @@
 .git/*
 #Ignore dropbox files
 *.dropbox
+#Ignore outdated files/ marked with . 
+*files/.*
 
 #Whitelist main webpage files
 !index.html
