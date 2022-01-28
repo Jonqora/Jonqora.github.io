@@ -5,8 +5,6 @@
 .git/*
 #Ignore dropbox files
 *.dropbox
-#Ignore outdated files/ marked with . 
-*files/.*
 
 #Whitelist main webpage files
 !index.html
@@ -23,6 +21,10 @@
 !nonlistening/
 !nonlistening/*
 !.gitignore
+
+#Ignore outdated files/ marked with . , but not folders (if any)
+files/.*
+!files/.*/
 
 #Whitelist daily200words graphics
 !daily200words/
