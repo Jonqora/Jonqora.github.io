@@ -8,8 +8,9 @@ CONFIG | set [Y, M, D] values with updateSpeed:
 - Patch version increments daily or every D days */
 
 /*======== Config ========*/
-const startDate = new Date("September 7, 2021");
-const startRelease = 1;  //Major version number corresponding to above date
+// const startDate = new Date("September 7, 2021");
+const startDate = new Date("February 4, 2024");
+const startRelease = 3;  //Major version number corresponding to above date
 const updateSpeed = [1, 1, 3];  //Larger numbers = slower updates
 
 
